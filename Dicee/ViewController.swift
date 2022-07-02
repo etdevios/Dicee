@@ -13,21 +13,24 @@ class ViewController: UIViewController {
     @IBOutlet weak var diceImageView1: UIImageView!
     @IBOutlet weak var diceImageView2: UIImageView!
     
+    var leftDiceNumber = 1
+    var rightDiceNumber = 5
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        diceImageView1.image = #imageLiteral(resourceName: "DiceSix")
-//        код для вызова миниатюры картинок:
-//        diceImageView1.image = #imageLiteral(resourceName: "DiceSix")
-//        код назначение картинок из assets напрямую:
-//        diceImageView1.image = UIImage(named: "DiceSix") код для
-        diceImageView2.image = #imageLiteral(resourceName: "DiceTwo")
     }
     
     @IBAction func rollButtonPressed(_ sender: UIButton) {
-//        print("Button got tapped")
-        diceImageView1.image = #imageLiteral(resourceName: "DiceFour")
-        diceImageView2.image = #imageLiteral(resourceName: "DiceFour")
+        
+        
+        diceImageView1.image = [#imageLiteral(resourceName: "DiceOne"), #imageLiteral(resourceName: "DiceTwo"), #imageLiteral(resourceName: "DiceThree"), #imageLiteral(resourceName: "DiceFour"), #imageLiteral(resourceName: "DiceFive"), #imageLiteral(resourceName: "DiceSix")][leftDiceNumber]
+        
+        leftDiceNumber = leftDiceNumber + 1
+        
+        diceImageView2.image = [#imageLiteral(resourceName: "DiceOne"), #imageLiteral(resourceName: "DiceTwo"), #imageLiteral(resourceName: "DiceThree"), #imageLiteral(resourceName: "DiceFour"), #imageLiteral(resourceName: "DiceFive"), #imageLiteral(resourceName: "DiceSix")][rightDiceNumber]
+        
+        rightDiceNumber = rightDiceNumber - 1
     }
     
 
