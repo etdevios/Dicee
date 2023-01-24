@@ -58,44 +58,42 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="aFm-To-xHQ">
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="aFm-To-xHQ">
                                 <rect key="frame" x="0.0" y="366" width="393" height="120"/>
                                 <subviews>
-                                    <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="A1d-3B-oHW">
-                                        <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="120"/>
-                                        <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiceSix" translatesAutoresizingMaskIntoConstraints="NO" id="e8n-lu-tTy">
-                                                <rect key="frame" x="38.333333333333343" y="0.0" width="120" height="120"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="120" id="d72-Mh-cct"/>
-                                                </constraints>
-                                            </imageView>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstItem="e8n-lu-tTy" firstAttribute="top" secondItem="A1d-3B-oHW" secondAttribute="top" id="4Vb-x5-Hs5"/>
-                                            <constraint firstItem="e8n-lu-tTy" firstAttribute="centerY" secondItem="A1d-3B-oHW" secondAttribute="centerY" id="GpM-33-fFd"/>
-                                            <constraint firstItem="e8n-lu-tTy" firstAttribute="centerX" secondItem="A1d-3B-oHW" secondAttribute="centerX" id="RRD-hd-6LH"/>
-                                        </constraints>
+                                    <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="A1d-3B-oHW" userLabel="ViewLeading">
+                                        <rect key="frame" x="0.0" y="0.0" width="53" height="120"/>
                                     </view>
-                                    <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="9kU-xz-mWr">
-                                        <rect key="frame" x="196.66666666666663" y="0.0" width="196.33333333333337" height="120"/>
-                                        <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiceOne" translatesAutoresizingMaskIntoConstraints="NO" id="c5Q-fN-d1d">
-                                                <rect key="frame" x="38" y="0.0" width="120" height="120"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="120" id="zk1-LW-SNA"/>
-                                                </constraints>
-                                            </imageView>
-                                        </subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiceSix" translatesAutoresizingMaskIntoConstraints="NO" id="e8n-lu-tTy">
+                                        <rect key="frame" x="53" y="0.0" width="120" height="120"/>
                                         <constraints>
-                                            <constraint firstItem="c5Q-fN-d1d" firstAttribute="centerX" secondItem="9kU-xz-mWr" secondAttribute="centerX" id="LYD-Cm-i3Q"/>
-                                            <constraint firstItem="c5Q-fN-d1d" firstAttribute="top" secondItem="9kU-xz-mWr" secondAttribute="top" id="Od7-Cg-yIi"/>
-                                            <constraint firstItem="c5Q-fN-d1d" firstAttribute="centerY" secondItem="9kU-xz-mWr" secondAttribute="centerY" id="quA-xj-jKP"/>
+                                            <constraint firstAttribute="height" constant="120" id="Fw3-QU-CuX"/>
+                                            <constraint firstAttribute="width" constant="120" id="d72-Mh-cct"/>
                                         </constraints>
+                                    </imageView>
+                                    <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="9kU-xz-mWr" userLabel="ViewCenter">
+                                        <rect key="frame" x="173" y="0.0" width="50" height="120"/>
+                                    </view>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiceOne" translatesAutoresizingMaskIntoConstraints="NO" id="c5Q-fN-d1d">
+                                        <rect key="frame" x="223" y="0.0" width="120" height="120"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="5lU-SN-G3G"/>
+                                            <constraint firstAttribute="width" constant="120" id="zk1-LW-SNA"/>
+                                        </constraints>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Dz-kY-je3" userLabel="ViewTrailing">
+                                        <rect key="frame" x="343" y="0.0" width="50" height="120"/>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="120" id="JRt-mK-0uT"/>
+                                    <constraint firstItem="5Dz-kY-je3" firstAttribute="top" secondItem="aFm-To-xHQ" secondAttribute="top" id="7Sy-pi-7ti"/>
+                                    <constraint firstItem="e8n-lu-tTy" firstAttribute="leading" secondItem="A1d-3B-oHW" secondAttribute="trailing" id="8AL-f8-cYh"/>
+                                    <constraint firstItem="5Dz-kY-je3" firstAttribute="leading" secondItem="c5Q-fN-d1d" secondAttribute="trailing" id="RSQ-Lg-jYt"/>
+                                    <constraint firstItem="c5Q-fN-d1d" firstAttribute="leading" secondItem="9kU-xz-mWr" secondAttribute="trailing" id="S3F-lL-iBm"/>
+                                    <constraint firstItem="A1d-3B-oHW" firstAttribute="top" secondItem="aFm-To-xHQ" secondAttribute="top" id="Y9v-wg-GWy"/>
+                                    <constraint firstItem="9kU-xz-mWr" firstAttribute="leading" secondItem="e8n-lu-tTy" secondAttribute="trailing" id="c1b-w4-QMs"/>
+                                    <constraint firstItem="9kU-xz-mWr" firstAttribute="top" secondItem="aFm-To-xHQ" secondAttribute="top" id="eB7-MQ-nVu"/>
+                                    <constraint firstAttribute="trailing" secondItem="5Dz-kY-je3" secondAttribute="trailing" id="fG6-85-Xeb"/>
                                 </constraints>
                             </stackView>
                         </subviews>
