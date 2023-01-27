@@ -108,8 +108,8 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aFm-To-xHQ" secondAttribute="trailing" id="BA5-5w-qEw"/>
                             <constraint firstItem="aFm-To-xHQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EAV-Mw-hkn"/>
                             <constraint firstAttribute="bottom" secondItem="RMB-fD-BTR" secondAttribute="bottom" id="Yj5-fP-lbI"/>
-                            <constraint firstItem="RMB-fD-BTR" firstAttribute="leading" secondItem="aFm-To-xHQ" secondAttribute="leading" id="b1V-Ra-9wy"/>
-                            <constraint firstItem="RMB-fD-BTR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fjO-fH-QIV"/>
+                            <constraint firstItem="RMB-fD-BTR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="b1V-Ra-9wy"/>
+                            <constraint firstItem="RMB-fD-BTR" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="fjO-fH-QIV"/>
                             <constraint firstItem="1Wo-sG-rLf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mS4-tG-kZ7"/>
                             <constraint firstItem="aFm-To-xHQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nBb-cp-4YG"/>
                             <constraint firstAttribute="trailing" secondItem="1Wo-sG-rLf" secondAttribute="trailing" id="ovw-v1-9b8"/>
